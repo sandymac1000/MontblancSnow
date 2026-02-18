@@ -1,0 +1,17 @@
+{
+  "framework": "vite",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/api/snow", "destination": "/api/snow" },
+    { "source": "/api/snow-contamines", "destination": "/api/snow-contamines" },
+    { "source": "/api/snow-combloux", "destination": "/api/snow-combloux" },
+    { "source": "/api/forecast", "destination": "/api/forecast" }
+  ],
+  "functions": {
+    "api/snow.js": { "maxDuration": 20 },
+    "api/snow-contamines.js": { "maxDuration": 20 },
+    "api/snow-combloux.js": { "maxDuration": 20 },
+    "api/forecast.js": { "maxDuration": 10 }
+  }
+}
